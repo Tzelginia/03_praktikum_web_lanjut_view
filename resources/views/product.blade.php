@@ -5,23 +5,44 @@
           <div class="container-fluid">
                <div class="row">
 
+               <!-- @dd($all_product) -->
                     <div class="col-lg-12 col-12">
 
                         <h2 class="mb-5 text-center" data-aos="fade-up">
-                            Please take a look through our
-                            <strong>featured Digital Trends</strong>
+                            Silahkan Lihat Produk Unggulan Kami
+                            <strong>Digital Trends</strong>
                         </h2>
 
-                         <div class="owl-carousel owl-theme" id="project-slide">
+                
+                        <div class="owl-carousel owl-theme" id="project-slide">
+                        @foreach ($all_product as $p)
                               <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
                                    <img src="images/project/project-image01.jpg" class="img-fluid" alt="project image">
 
                                    <div class="project-info">
-                                        <small>Marketing</small>
+                                        <small>{{$p->nama_jasa}}</small>
 
                                         <h3>
                                              <a href="project-detail.html">
-                                                  <span>Sweet Go Agency</span>
+                                                  <span>{{$p->Deskripsi}}</span>
+                                                  <i class="fa fa-angle-right project-icon"></i>
+                                             </a>
+                                        </h3>
+                                   </div>
+                              </div> -->
+                          @endforeach
+
+                         <!-- <div class="owl-carousel owl-theme" id="project-slide">
+                              
+                              <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
+                                   <img src="images/project/project-image01.jpg" class="img-fluid" alt="project image">
+
+                                   <div class="project-info">
+                                        <small>{{</small>
+
+                                        <h3>
+                                             <a href="project-detail.html">
+                                                  <span>Marketing Online</span>
                                                   <i class="fa fa-angle-right project-icon"></i>
                                              </a>
                                         </h3>
@@ -36,7 +57,7 @@
 
                                         <h3>
                                              <a href="project-detail.html">
-                                                  <span>Smart Ladies</span>
+                                                  <span>Pembuatan Website</span>
                                                   <i class="fa fa-angle-right project-icon"></i>
                                              </a>
                                         </h3>
@@ -47,11 +68,11 @@
                                    <img src="images/project/project-image03.jpg" class="img-fluid" alt="project image">
 
                                    <div class="project-info">
-                                        <small>Branding</small>
+                                        <small>Model Produk</small>
 
                                         <h3>
                                              <a href="project-detail.html">
-                                                  <span>Shoes factory</span>
+                                                  <span>Pembuatan Contoh Model Produk</span>
                                                   <i class="fa fa-angle-right project-icon"></i>
                                              </a>
                                         </h3>
@@ -66,7 +87,7 @@
 
                                         <h3>
                                              <a href="project-detail.html">
-                                                  <span>Race Bicycle</span>
+                                                  <span>Pembuatan Feed Instagram</span>
                                                   <i class="fa fa-angle-right project-icon"></i>
                                              </a>
                                         </h3>
@@ -81,12 +102,12 @@
 
                                         <h3>
                                              <a href="project-detail.html">
-                                                  <span>Ultimate HealthCare</span>
+                                                  <span>Pembuatan Vidio</span>
                                                   <i class="fa fa-angle-right project-icon"></i>
                                              </a>
                                         </h3>
                                    </div>
-                              </div>
+                              </div> -->
                          </div>
                     </div>
 
